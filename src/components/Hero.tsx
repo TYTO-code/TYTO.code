@@ -1,4 +1,3 @@
-import owlHero from "../assets/hero.png";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { TECHNOLOGIES } from "./data";
@@ -69,7 +68,7 @@ export function Hero() {
           <div className="glow-orb pointer-events-none absolute inset-4 opacity-90" />
           <div className="relative animate-float">
             <img
-              src={owlHero}
+              src="/owl-hero.png"
               alt="Coruja futurista TYTO formada por circuitos holográficos roxos"
               width={1024}
               height={1024}

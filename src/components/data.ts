@@ -236,8 +236,8 @@ export const FAQS = [
 ];
 
 export const SOCIALS = [
-  { label: "WhatsApp", href: "https://wa.me/5500000000000", icon: "MessageCircle" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/", icon: "Linkedin" },
-  { label: "GitHub", href: "https://github.com/", icon: "Github" },
-  { label: "Instagram", href: "https://www.instagram.com/", icon: "Instagram" },
+  { label: "WhatsApp", href: "https://wa.me/5579991750317", icon: "MessageCircle" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/tyto-code", icon: "Linkedin" },
+  { label: "GitHub", href: "https://github.com/TYTO-code", icon: "Github" },
+  { label: "Instagram", href: "https://www.instagram.com/tyto.code", icon: "Instagram" },
 ];

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Sparkles, ExternalLink } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 import { cn } from "../lib/utils";
 import { CLUB_URL, NAV_LINKS } from "./data";
 
@@ -29,8 +29,8 @@ export function Navbar() {
         style={{ width: "calc(100% - 2rem)" }}
       >
         <a href="#inicio" className="group flex items-center gap-2.5">
-          <span className="relative flex size-9 items-center justify-center rounded-xl bg-[image:var(--gradient-brand)] shadow-[var(--shadow-glow)]">
-            <Sparkles className="size-4 text-primary-foreground" />
+          <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-xl bg-[image:var(--gradient-brand)] shadow-[var(--shadow-glow)]">
+            <img src="/logocirculo2.png" alt="TYTO.code" className="size-full object-cover" />
           </span>
           <span className="font-display text-lg font-semibold tracking-tight">
             TYTO<span className="text-neon">.code</span>

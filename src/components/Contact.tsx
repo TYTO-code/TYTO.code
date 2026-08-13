@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 import { ICONS } from "./icons";
@@ -40,10 +40,7 @@ export function Contact() {
 
           <ul className="mt-8 space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-3">
-              <Mail className="size-4 text-neon" /> contato@tytocode.com.br
-            </li>
-            <li className="flex items-center gap-3">
-              <Phone className="size-4 text-neon" /> +55 (00) 00000-0000
+              <Mail className="size-4 text-neon" /> tyto.code@gmail.com
             </li>
             <li className="flex items-center gap-3">
               <MapPin className="size-4 text-neon" /> Atendimento remoto em todo o Brasil

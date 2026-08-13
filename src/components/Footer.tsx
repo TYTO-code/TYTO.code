@@ -1,4 +1,3 @@
-import { Sparkles } from "lucide-react";
 import { ICONS } from "./icons";
 import { CLUB_URL, NAV_LINKS, SOCIALS } from "./data";
 
@@ -8,8 +7,8 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="flex size-9 items-center justify-center rounded-xl bg-[image:var(--gradient-brand)] shadow-[var(--shadow-glow)]">
-              <Sparkles className="size-4 text-primary-foreground" />
+            <span className="flex size-9 items-center justify-center overflow-hidden rounded-xl bg-[image:var(--gradient-brand)] shadow-[var(--shadow-glow)]">
+              <img src="/logocirculo2.png" alt="TYTO.code" className="size-full object-cover" />
             </span>
             <span className="font-display text-lg font-semibold">
               TYTO<span className="text-neon">.code</span>
@@ -40,8 +39,7 @@ export function Footer() {
         <div>
           <h3 className="font-display text-sm font-semibold">Contato</h3>
           <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-            <li>contato@tytocode.com.br</li>
-            <li>+55 (00) 00000-0000</li>
+            <li>tyto.code@gmail.com</li>
             <li>Brasil · atendimento remoto</li>
           </ul>
         </div>
