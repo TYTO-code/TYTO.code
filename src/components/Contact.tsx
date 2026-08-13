@@ -16,7 +16,14 @@ export function Contact() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const formData = new FormData(form);
+    const data = {
+      nome: formData.get("nome"),
+      empresa: formData.get("empresa"),
+      email: formData.get("email"),
+      telefone: formData.get("telefone"),
+      mensagem: formData.get("mensagem"),
+    };
 
     setSending(true);
     try {
