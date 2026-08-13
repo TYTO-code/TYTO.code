@@ -8,20 +8,37 @@ import { SOCIALS } from "./data";
 const fieldClass =
   "w-full rounded-xl border border-input bg-background/60 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-neon/60 focus:ring-2 focus:ring-ring/40 focus:outline-none transition-colors";
 
+const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL ?? "/api/contact";
+
 export function Contact() {
   const [sending, setSending] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSending(true);
     const form = event.currentTarget;
-    window.setTimeout(() => {
-      setSending(false);
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    setSending(true);
+    try {
+      const response = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+
       form.reset();
       toast.success("Solicitação enviada!", {
         description: "Nossa equipe entra em contato em até 1 dia útil.",
       });
-    }, 700);
+    } catch {
+      toast.error("Não foi possível enviar sua mensagem", {
+        description: "Tente novamente em instantes ou fale por email/WhatsApp.",
+      });
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
