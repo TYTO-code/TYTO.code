@@ -1,4 +1,5 @@
-import { NAV_ITEMS } from "../content";
+import { NAV_ITEMS, OWL_SRC } from "../content";
+import { MarcaImg } from "./MarcaImg";
 
 function rotaAtiva(pathname: string): string {
   const rota = pathname.replace(/\/+$/, "") || "/";
@@ -15,7 +16,7 @@ export function Navbar() {
         className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6"
       >
         <a href="/" className="flex items-center gap-2.5 rounded-input">
-          <img src="/owl.svg" alt="" width={24} height={24} className="size-6" />
+          <MarcaImg src={OWL_SRC} alt="" width={24} height={24} className="size-6" />
           <span className="font-display text-xl font-bold tracking-tight">
             <span className="text-ink">TYTO</span>
             <span className="text-violet">.CODE</span>

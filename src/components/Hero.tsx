@@ -1,9 +1,12 @@
+import { OWL_SRC } from "../content";
+import { MarcaImg } from "./MarcaImg";
+
 export function Hero() {
   return (
     <section aria-labelledby="hero-titulo" className="relative overflow-hidden">
       {/* Marca-d'água: a única ocorrência da coruja grande na página. */}
-      <img
-        src="/owl.svg"
+      <MarcaImg
+        src={OWL_SRC}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 top-1/2 w-[26rem] max-w-none -translate-y-1/2 select-none opacity-5 sm:-right-16 sm:w-[34rem] lg:right-[-6rem] lg:w-[40rem]"

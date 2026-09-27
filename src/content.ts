@@ -6,6 +6,9 @@
 
 export const DISCORD_URL = "[preencher: link de convite do Discord]";
 
+/** Arquivos da marca em `public/`. A página não quebra se ainda não existirem. */
+export const OWL_SRC = "/owl.svg";
+
 export type NavItem = { label: string; href: string; route: string };
 
 /** `route` decide qual item fica ativo: só um por rota. */
@@ -13,7 +16,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Comunidade", href: "/", route: "/" },
   { label: "Segurança", href: "/#guarda-pretoriana", route: "/seguranca" },
   { label: "Agentes", href: "/#agentes", route: "/agentes" },
-  { label: "Skills", href: "/skills", route: "/skills" },
+  { label: "Skills", href: "/skills/", route: "/skills" },
 ];
 
 export type ListingEntry = { name: string; description: string };
@@ -59,3 +62,13 @@ export const GUARDA_METRICAS: Metric[] = [
   { label: "incidentes analisados", value: "[preencher: N]" },
   { label: "tempo médio de resposta", value: "[preencher: Xh]" },
 ];
+
+export const SKILLS: ListingEntry[] = [
+  {
+    name: "[preencher: nome da skill]",
+    description: "[preencher: o que ela aplica no projeto]",
+  },
+];
+
+/** Repositório de onde os membros copiam as skills. */
+export const SKILLS_REPO = "[preencher: repositório das skills]";

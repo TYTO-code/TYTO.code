@@ -9,7 +9,7 @@ export function Skills() {
         <span className="font-mono text-[0.95em] text-amber">Claude Code</span> e aplicam as
         mesmas convenções em qualquer repositório.
       </p>
-      <a href="/skills" className="link-violet mt-6 inline-block">
+      <a href="/skills/" className="link-violet mt-6 inline-block">
         Ver skills disponíveis
       </a>
     </Section>
