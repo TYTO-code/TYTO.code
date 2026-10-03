@@ -1,44 +1,20 @@
-import { Navbar } from "./components/Navbar";
+import { Layout } from "./components/Layout";
 import { Hero } from "./components/Hero";
-import { TechMarquee } from "./components/TechMarquee";
-import {
-  About,
-  ClubCTA,
-  Differentials,
-  FAQ,
-  Partners,
-  Portfolio,
-  Process,
-  Services,
-  Stats,
-  Testimonials,
-} from "./components/Sections";
-
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import { OQueFazemos } from "./components/OQueFazemos";
+import { GuardaPretoriana } from "./components/GuardaPretoriana";
+import { Agentes } from "./components/Agentes";
+import { Skills } from "./components/Skills";
+import { Entrar } from "./components/Entrar";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-background">
-      <Navbar />
-      <main>
-        <Hero />
-        <TechMarquee />
-        <Portfolio />
-        <About />
-        <Services />
-        <Differentials />
-        <Stats />
-        <Process />
-
-        <Testimonials />
-        <Partners />
-        <ClubCTA />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Layout>
+      <Hero />
+      <OQueFazemos />
+      <GuardaPretoriana />
+      <Agentes />
+      <Skills />
+      <Entrar />
+    </Layout>
   );
 }
-
